@@ -29,6 +29,45 @@
         <h1 class="display-4">Lorem, ipsum dolor.</h1>
       </v-col>
     </v-row>
+
+    <v-row>
+      <v-col xs="12" sm="6">
+        <v-card>
+          <v-img src="https://cdn.vuetifyjs.com/images/cards/store.jpg">
+            <v-container fill-height justify="center">
+              <v-row>
+                <v-col align="center">
+                  <h3 class="headline white--text">Lorem, ipsum dolor.</h3>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-img>
+          <v-card-title>
+            <h2>Lorem, ipsum dolor.</h2>
+          </v-card-title>
+          <v-card-text>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi dignissimos vitae minima? Eveniet quas veritatis consequuntur asperiores tempora quis cumque nobis sint voluptatem similique eligendi cum, eius, debitis quidem non.</p>
+          </v-card-text>
+          <v-card-actions>
+            <v-btn color="info" flat="true">Acción</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-col>
+      <v-col xs="12" sm="6">
+        <v-card>
+          <v-img src="https://cdn.vuetifyjs.com/images/cards/store.jpg"></v-img>
+          <v-card-title>
+            <h2>Lorem, ipsum dolor.</h2>
+          </v-card-title>
+          <v-card-text>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi dignissimos vitae minima? Eveniet quas veritatis consequuntur asperiores tempora quis cumque nobis sint voluptatem similique eligendi cum, eius, debitis quidem non.</p>
+          </v-card-text>
+          <v-card-actions>
+            <v-btn color="info" flat="true">Acción</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
