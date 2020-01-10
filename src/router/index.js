@@ -27,6 +27,15 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "buttons" */ "../views/Buttons.vue")
+  },
+  {
+    path: "/tasks-crud",
+    name: "tasks-crud",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "tasks-crud" */ "../views/TasksCrud.vue")
   }
 ];
 
