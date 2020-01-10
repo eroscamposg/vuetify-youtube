@@ -1,38 +1,30 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+    <!-- v-app-bar reemplaza a v-toolbar -->
+    <v-app-bar app="true">
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <!-- NAVIGATION DRAWERS -->
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
+      <v-toolbar-title>Lol</v-toolbar-title>
       <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>open_in_new</v-icon>
-      </v-btn>
+      <v-btn class="success">Ingreso</v-btn>
+      <v-btn class="warning ml-5">Error</v-btn>
     </v-app-bar>
 
+    <v-navigation-drawer app="true" v-model="drawer" temporary="true" dark>
+      <v-row class="mt-4">
+        <v-col justify="center" align="center">
+          <v-avatar>
+            <img src="https://randomuser.me/api/portraits/men/81.jpg" />
+          </v-avatar>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col justify="center" align="center">
+          <p class="white--text headline">Juanito Perez</p>
+        </v-col>
+      </v-row>
+    </v-navigation-drawer>
     <v-content>
       <router-view />
     </v-content>
@@ -44,8 +36,10 @@ export default {
   name: "App",
   components: {},
 
-  data: () => ({
-    //
-  })
+  data() {
+    return {
+      drawer: true
+    };
+  }
 };
 </script>

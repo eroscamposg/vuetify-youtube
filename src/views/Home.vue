@@ -2,30 +2,17 @@
   <v-container class="home">
     <v-row>
       <!-- en dispositivos pequeños, utiliza solo 6 columnas XS6-->
-      <v-col
-        class="red darken-1
-"
-        cols="12"
-      >
+      <v-col class="red darken-1" cols="12">
         <h1>12</h1>
       </v-col>
       <v-col class="deep-purple lighten-3" cols="6">
         <h1>6</h1>
       </v-col>
-      <v-col
-        class="blue lighten-3
-"
-        cols="6"
-      >
+      <v-col class="blue lighten-3" cols="6">
         <h1>6</h1>
       </v-col>
     </v-row>
-    <v-row
-      class="mt-5 secondary "
-      justify="center"
-      align="center"
-      style="height:300px"
-    >
+    <v-row class="mt-5 secondary" justify="center" align="center" style="height:300px">
       <v-col class="info d-flex justify-center" cols="3">
         <h1>Centrado</h1>
       </v-col>
